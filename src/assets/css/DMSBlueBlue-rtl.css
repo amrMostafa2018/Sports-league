@@ -1,0 +1,740 @@
+/*!
+ *
+ * Name             : DMSBlueBlue
+ * Version          : 0.16
+ * Last Modified    : 10/10/2020
+ *
+ */
+
+/******************************************************GENERAL*************************************/
+
+
+h2 .glyphicon.right {
+    margin-left: unset;
+    margin-right: 5px;
+}
+
+h3 .glyphicon, table.table h3 .glyphicon  {
+    padding: 3px 4px 3px 3px;
+}
+
+h3 .glyphicon.right {
+    margin-left: unset;
+    margin-right: 5px;
+}
+
+.left {
+    float: right;
+}
+
+.right {
+    float: left;
+}
+
+.check-label,
+.radio-label {
+    margin-left: 5px;
+    margin-right: unset;
+}
+
+.check-label input,
+.radio-label input {
+    margin: 0 0 0 2px;
+}
+
+.btn.right {
+    margin-right: 10px;
+    margin-left: unset;
+}
+
+.btn-primary .glyphicon {
+    left: unset;
+    right: -2px;
+}
+
+.btn-primary:hover .glyphicon,
+.btn-primary:focus .glyphicon {
+    left: unset;
+    right: -8px;
+}
+
+.btn-actions-pane-right {
+    margin-left: unset;
+    margin-right: auto;
+}
+
+
+.no-padding-left {
+    padding-left: 8px;
+    padding-right: 0;
+}
+
+.no-padding-right {
+    padding-right: 8px;
+    padding-left: 0;
+}
+
+
+/***********************************************HEADER**********************************************/
+
+.navbar-default .container-fluid {
+    padding-left: unset;
+    padding-right: 0;
+}
+
+.navbar-brand {
+    padding: 15px 0 15px 15px;
+    margin-left: unset !important;
+    margin-right: 0 !important;
+}
+
+.navbar-default .navbar-toggle {
+    margin: 3px 0 3px 15px;
+}
+
+.navbar-nav > li > .dropdown-menu {
+    right: unset;
+    left: 10px;
+}
+
+.navbar-default .main-link .dropdown-menu {
+    width: 230px;
+    padding: 10px;
+    right: -100px;
+    overflow: auto;
+}
+
+.navbar-nav > li > .dropdown-menu.more-links {
+    right: unset;
+    left: -130px;
+}
+
+
+.collapse-nav {
+    padding-left: unset;
+    padding-right: 0;
+}
+
+.change-language{
+    padding-left: unset;
+    padding-right: 10px;
+}
+
+/******************************************************LEFT-COL*************************************/
+
+.left-col {
+    left: unset;
+    right: 0;
+}
+
+.left-block img {
+    margin-right: -10px;
+    margin-left: 5px;
+}
+
+.left-main-link {
+    border-left: unset;
+    border-right: 4px solid transparent;
+}
+
+.left-main-link:hover,
+.left-main-link.active {
+    border-right-color: #ffc356;
+}
+
+.left-main-link .glyphicon {
+    right: unset;
+    left: 10px;
+}
+
+.collapse .left-main-link .glyphicon {
+    right: unset;
+    left: 10px;
+}
+
+
+.sub-menu a:before {
+    left: unset;
+    right: 0;
+}
+
+/******************************************************LEFT-Secondary Menu*************************************/
+
+/* Shown menu */
+.show-menu .second-menu-wrap {
+    -webkit-transform: translate3d(-250px,0,0);
+    transform: translate3d(-250px,0,0);
+
+}
+
+@media (max-width: 768px) {
+    .second-menu-wrap {
+        -webkit-transform: translate3d(0, -200px, 0);
+        transform: translate3d(0, -200px, 0);
+    }
+    /* Shown menu */
+    .show-menu .second-menu-wrap {
+        -webkit-transform: translate3d(0, 10px, 0);
+        transform: translate3d(0, 10px, 0);
+    }
+    .second-menu li  {
+        float: right;
+    }
+}
+/******************************************************RIGHT-CONTENT*************************************/
+
+
+.right-content {
+    right: unset;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    padding-left: unset;
+    padding-right: 250px;
+}
+
+.right-content.active {
+    padding-left: unset;
+    padding-right: 50px;
+}
+
+h1 .glyphicon-minus {
+    padding: 3px 1px 3px 3px !important;
+}
+
+h1 .glyphicon-plus {
+    padding: 3px 3px 3px 2px !important
+}
+
+h1 .glyphicon-floppy-disk {
+    padding: 4px 4px 2px 3px !important;
+}
+
+.new-staff-tab {
+    margin-left: 5px;
+    margin-right: unset;
+}
+
+.page-title div .glyphicon.right,
+.circle-icon.right {
+    margin-left: unset;
+    margin-right: 10px;
+}
+
+.toggle-buttons {
+    margin-right: unset;
+    margin-left: 10px;
+    float: right;
+}
+
+/***************************************************active switch*******************************************/
+
+.switch {
+    margin-right: unset;
+    margin-left: 5px;
+}
+
+/* .slider:before {
+    right: 2px;
+    left: unset;
+} */
+
+/******************************************************ALERTS*************************************/
+
+.alert {
+    right: unset;
+    left: 15px;
+    padding-right: unset;
+    padding-left: 15px;
+}
+
+
+.alert-dismissable .close,
+.alert-dismissible .close {
+    right: unset;
+    left: 0;
+}
+
+ol.alert-message {
+    padding-left: unset;
+    padding-right: 15px;
+}
+
+/******************************************************Icons******************************/
+
+.left-col .left-main-link span:nth-child(1) {
+    margin-right: -5px;
+    margin-left: 10px;
+    float: right;
+}
+
+
+/***************************************************** Page Filter *************************************/
+
+.btn-primary .glyphicon {
+    left: unset;
+    right: -2px;
+}
+
+.btn-primary:hover .glyphicon,
+.btn-primary:focus .glyphicon {
+    left: unset;
+    right: -8px;
+}
+
+/* ---------------------- Chosen jQuery Plugin ---------------------- */
+
+.chosen-container-multi .chosen-choices li.search-choice,
+.chosen-container-single .chosen-single li.search-choice {
+    padding: 0px 5px 0px 20px;
+}
+
+/* ---------------------- Select2 jQuery Plugin ---------------------- */
+
+.select2-container .select2-selection--single .select2-selection__rendered{
+    line-height: 18px;
+    padding-left: unset;
+    padding-right: 0;
+}
+
+/******************************************************MEDIA*************************************/
+
+
+@media (max-width: 768px) {
+
+
+    .container-fluid > .navbar-header {
+        padding-left: unset;
+        padding-right: 15px;
+    }
+
+    .right-content {
+        padding-right: 0;
+        padding-left: unset;
+    }
+
+    .right-content.active {
+        padding-right: 0;
+        padding-left: unset;
+    }
+
+    #mynav .dropdown-toggle {
+        padding-right: 30px;
+        padding-left: unset;
+    }
+
+    #mynav .dropdown-toggle .caret {
+        float: left;
+    }
+
+    .navbar-header img {
+        margin-left: unset;
+        margin-right: 10px !important;
+    }
+
+}
+
+
+/******************************************************info-box*************************************/
+
+
+.info-box.hover-expand-effect:after {
+    left: unset;
+    right: 80px;
+}
+
+.info-box .content .link {
+    right: unset;
+    left: 10px;
+}
+
+.detailed-info-box .icon {
+    left: unset;
+    right: 10px;
+}
+.detailed-info-box .content {
+    text-align: left;
+    padding: 5px 80px 0 10px;
+}
+.detailed-info-box .details li .description {
+    float: left;
+}
+
+/******************************************************Backgrounds*************************************/
+
+.indicators-list>li .indicator-text{
+    border-right: unset;
+    border-left: 1px solid #fff;
+}
+
+
+/******************************************************Msg Modal*************************************/
+
+.Msg .icon {
+    float: right;
+    margin-right: 10px;
+    margin-left: 22px;
+}
+
+.Msg .modal-body .info {
+    float: left;
+}
+
+.alert--footer button:last-child,
+.alert--footer button:nth-of-type(2) {
+    margin-right: unset;
+    margin-left: 8px;
+}
+
+.alert--footer button {
+    float: left;
+}
+
+/****************************************************** Lists *************************************/
+
+
+.item-list li.half,.item-list li.third {
+    float: right;
+}
+
+.icon-list li::before {
+    font-family: "Font Awesome 5 Free";
+    font-weight: 900;
+    margin: 0 0 0 10px;
+    color: #1e6bac;
+    float: right;
+}
+
+/******************************************************Callouts*************************************/
+
+
+.callout-icon {
+    border-left-width: unset;
+    border-right-width: 5px;
+    border-radius: 5px 5px 0 0;
+}
+
+.callout button.close {
+    right: unset;
+    left: 25px;
+}
+
+.callout-default .callout-icon {
+    border-left-color: unset;
+    border-right-color: #777;
+}
+
+.callout-primary .callout-icon {
+    border-left-color: unset;
+    border-right-color: #428bca;
+}
+
+.callout-success .callout-icon {
+    border-left-color: unset;
+    border-right-color: #42ae42;
+}
+
+.callout-danger .callout-icon {
+    border-left-color: unset;
+    border-right-color: #d33534;
+}
+
+.callout-warning .callout-icon {
+    border-left-color: unset;
+    border-right-color: #ff5400;
+}
+
+.callout-help .callout-icon {
+    border-left-color: unset;
+    border-right-color: #ffab00;
+}
+
+.callout-info .callout-icon {
+    border-left-color: unset;
+    border-right-color: #3592ff;
+}
+
+.callout-bdc .callout-icon {
+    border-left-color: unset;
+    border-right-color: #29527a;
+}
+
+/******************************************************Helper*************************************/
+
+.pr-0 {
+    padding-right: unset;
+    padding-left: 0 !important;
+}
+
+.pr-3 {
+    padding-right: unset;
+    padding-left: 3px !important;
+}
+
+.pr-5 {
+    padding-right: unset;
+    padding-left: 5px !important;
+}
+
+.pr-10 {
+    padding-right: unset;
+    padding-left: 10px !important;
+}
+
+.pr-15 {
+    padding-right: unset;
+    padding-left: 15px !important;
+}
+
+.pr-20 {
+    padding-right: unset;
+    padding-left: 20px !important;
+}
+
+.pr-25 {
+    padding-right: unset;
+    padding-left: 25px !important;
+}
+
+.pr-30 {
+    padding-right: unset;
+    padding-left: 30px !important;
+}
+
+.pr-35 {
+    padding-right: unset;
+    padding-left: 35px !important;
+}
+
+.pr-40 {
+    padding-right: unset;
+    padding-left: 40px !important;
+}
+
+.pr-45 {
+    padding-right: unset;
+    padding-left: 45px !important;
+}
+
+.pr-50 {
+    padding-right: unset;
+    padding-left: 50px !important;
+}
+
+
+.pl-0 {
+    padding-left: unset;
+    padding-right: 0 !important;
+}
+
+.pl-3 {
+    padding-left: unset;
+    padding-right: 3px !important;
+}
+
+.pl-5 {
+    padding-left: unset;
+    padding-right: 5px !important;
+}
+
+.pl-10 {
+    padding-left: unset;
+    padding-right: 10px !important;
+}
+
+.pl-15 {
+    padding-left: unset;
+    padding-right: 15px !important;
+}
+
+.pl-20 {
+    padding-left: unset;
+    padding-right: 20px !important;
+}
+
+.pl-25 {
+    padding-left: unset;
+    padding-right: 25px !important;
+}
+
+.pl-30 {
+    padding-left: unset;
+    padding-right: 30px !important;
+}
+
+.pl-35 {
+    padding-left: unset;
+    padding-right: 35px !important;
+}
+
+.pl-40 {
+    padding-left: unset;
+    padding-right: 40px !important;
+}
+
+.pl-45 {
+    padding-left: unset;
+    padding-right: 45px !important;
+}
+
+.pl-50 {
+    padding-left: unset;
+    padding-right: 50px !important;
+}
+
+.mr-0 {
+    margin-right: unset;
+    margin-left: 0 !important;
+}
+
+.mr-3 {
+    margin-right: unset;
+    margin-left: 3px !important;
+}
+
+.mr-5 {
+    margin-right: unset;
+    margin-left: 5px !important;
+}
+
+.mr-10 {
+    margin-right: unset;
+    margin-left: 10px !important;
+}
+
+.mr-15 {
+    margin-right: unset;
+    margin-left: 15px !important;
+}
+
+.mr-20 {
+    margin-right: unset;
+    margin-left: 20px !important;
+}
+
+.mr-25 {
+    margin-right: unset;
+    margin-left: 25px !important;
+}
+
+.mr-30 {
+    margin-right: unset;
+    margin-left: 30px !important;
+}
+
+.mr-35 {
+    margin-right: unset;
+    margin-left: 35px !important;
+}
+
+.mr-40 {
+    margin-right: unset;
+    margin-left: 40px !important;
+}
+
+.mr-45 {
+    margin-right: unset;
+    margin-left: 45px !important;
+}
+
+.mr-50 {
+    margin-right: unset;
+    margin-left: 50px !important;
+}
+
+.ml-0 {
+    margin-left: unset;
+    margin-right: 0 !important;
+}
+
+.ml-3 {
+    margin-left: unset;
+    margin-right: 3px !important;
+}
+
+.ml-5 {
+    margin-left: unset;
+    margin-right: 5px !important;
+}
+
+.ml-10 {
+    margin-left: unset;
+    margin-right: 10px !important;
+}
+
+.ml-15 {
+    margin-left: unset;
+    margin-right: 15px !important;
+}
+
+.ml-20 {
+    margin-left: unset;
+    margin-right: 20px !important;
+}
+
+.ml-25 {
+    margin-left: unset;
+    margin-right: 25px !important;
+}
+
+.ml-30 {
+    margin-left: unset;
+    margin-right: 30px !important;
+}
+
+.ml-35 {
+    margin-left: unset;
+    margin-right: 35px !important;
+}
+
+.ml-40 {
+    margin-left: unset;
+    margin-right: 40px !important;
+}
+
+.ml-45 {
+    margin-left: unset;
+    margin-right: 45px !important;
+}
+
+.ml-50 {
+    margin-left: unset;
+    margin-right: 50px !important;
+}
+
+/****************************************bootstrap overwrite text colors ************************************/
+
+.fixed-width-200 {
+    /* white-space: initial; */
+    /* white-space: pre-line; */
+    max-width: 200px;
+    white-space: initial;
+    float: left;
+}
+
+input[type="date"].form-control,
+input[type="time"].form-control,
+input[type="datetime-local"].form-control,
+input[type="month"].form-control {
+    line-height: initial;
+}
+
+/****************************************************** DataTable Pagination ************************************/
+.dataTables_length {
+    left: unset;
+    right: 10px;
+}
+
+.paginate, div.dataTables_wrapper div.dataTables_paginate {
+    padding-left: unset;
+    padding-right: 175px;
+}
+
+
+/********************************************** Font Awesome ****************************************************/
+.fa-chevron-right:before {
+    content: "\f053";
+}
+.fa-chevron-left:before{
+    content: "\f054";
+}

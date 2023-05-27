@@ -1,0 +1,226 @@
+/* DMSBlueBlue Overwrite Start */
+.darker-blue .left-col {
+    background: rgb(20,51,82);
+    background: linear-gradient(90deg,
+    rgba(20,51,82,1) 0%, rgba(30,70,106,1) 48%,
+    rgba(20,51,82,1) 100%);
+}
+
+.darker-blue .left-block {
+    margin: 0 0 0 5px;
+}
+
+.darker-blue .left-main-link:hover,.darker-blue .left-main-link {
+    border-top: 2px solid #87a2bd;
+}
+
+.darker-blue .left-main-link.active span:first-child, .darker-blue .left-col .left-main-link:hover span:nth-child(1) {
+    color: inherit;
+}
+
+.darker-blue .left-main-link:hover, .darker-blue .left-main-link.active{
+    border-left-color: #4bfdf1;
+}
+
+.darker-blue .left-main-link span:nth-child(2){
+    font-weight: 700;
+}
+
+.darker-blue .left-main-link.active span:nth-child(2){
+    color: #4bfdf1;
+}
+
+/* DMSBlueBlue Overwrite End*/
+
+.table.building-table > thead > tr > th,
+.table.building-table > tbody > tr > th,
+.table.building-table > thead > tr > td,
+.table.building-table > tbody > tr > td,
+.departments > .table > tbody > tr > td,
+.groups > .table > tbody > tr > td{
+    vertical-align: top;
+}
+
+.table.building-table .departments h3 {
+    font-size: 12px;
+    margin: 0;
+}
+
+.building-table .departments .table {
+    background-color: transparent;
+}
+
+
+.building-table{
+    border-left: 1px solid #d8e8f7 !important;
+    border-right: 1px solid #d8e8f7 !important;
+}
+
+.inline-edit {
+    min-height: 12px;
+    white-space: normal;
+}
+
+
+/* number-spinner */
+.input-group .input-group-btn .btn {
+    padding: 4px;
+}
+.input-group .input-group-btn .btn .glyphicon,.input-group .input-group-btn .btn:hover .glyphicon, .input-group .input-group-btn .btn:focus .glyphicon{
+    left:0;
+    top: 0;
+}
+.number-spinner input {
+    text-align: center;
+}
+
+
+
+/* Cleaning Areas Page */
+.table.cleaningArea {
+    margin: 10px 0 10px 60px;
+    width: calc(100% - 60px);
+}
+
+/* Select2 Styles */
+.select2-container .select2-selection--single {
+    height: 22px;
+}
+.select2-container--default .select2-selection--single .select2-selection__rendered {
+    line-height: 22px;
+}
+.select2-container .select2-selection--single .select2-selection__clear {
+    line-height: 22px;
+}
+.select2-container--default .select2-selection--single .select2-selection__arrow {
+    height: 20px;
+}
+
+.select2-container--default .select2-selection--single {
+    background-color: #fff;
+    border: 1px solid #ccc;
+    border-radius: 0;
+}
+.select2-container--default.select2-container--open .select2-selection--single {
+    border-color: #66afe9;
+    outline: 0;
+    -webkit-box-shadow: inset 0 1px 1px rgba(0,0,0,.075), 0 0 8px rgba(102,175,233,.6);
+    box-shadow: inset 0 1px 1px rgba(0,0,0,.075), 0 0 8px rgba(102,175,233,.6);
+}
+
+/* Icon Picker */
+.icons-selector .fip-icons-container {
+    white-space: initial;
+}
+
+/* Shifts */
+.shift-checks i[class^="shift-"] {
+    font-size: 14px;
+    line-height: 4px;
+    margin: 0 3px;
+    color: rgba(114, 129, 153, 0.5);
+}
+.shift-checks i[class^="shift-"].active {
+    color: rgba(114, 129, 153, 1);
+}
+.shift-checks i.shift-1 {
+    color: rgba(255, 165, 0, 0.5);
+}
+.shift-checks i.shift-2 {
+    color: rgba(255, 144, 121, 0.5);
+}
+.shift-checks i.shift-3 {
+    color: rgba(114, 129, 153, 0.5);
+}
+.shift-checks i.shift-1.active {
+    color: rgba(255, 165, 0, 1);
+}
+.shift-checks i.shift-2.active {
+    color: rgba(255, 144, 121, 1);
+}
+.shift-checks i.shift-3.active {
+    color: rgba(114, 129, 153, 1);
+}
+
+
+/*.table tr[class^="shift-"] td.shift-plan{
+    background:rgba(114, 129, 153, 0.5);
+}
+.table tr.shift-1 td.shift-plan{
+    background:rgba(255, 165, 0, 0.5);
+}
+.table tr.shift-2 td.shift-plan {
+    background:rgba(255, 144, 121, 0.5);
+}
+.table tr.shift-3 td.shift-plan {
+    background:rgba(114, 129, 153, 0.5);
+}*/
+
+
+/* Shifts switch */
+[class^="shift-"] .shift-plan label {
+    position: relative;
+    display: block;
+    width: auto;
+    height: 14px;
+    margin-right: 0px;
+    margin-bottom: -2px;
+}
+
+[class^="shift-"] .shift-plan label input {
+    display:none;
+}
+
+[class^="shift-"] .shift-plan span {
+    position: absolute;
+    cursor: pointer;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    height: 10px;
+    border-radius: 2px;
+    background-color: rgba(00,00,00,0.15);
+    transition:all 0.4s;
+    -webkit-transition:all 0.4s;
+    -moz-transition:all 0.4s;
+    -o-transition:all 0.4s;
+    -ms-transition:all 0.4s;
+}
+
+.shift-1 .shift-plan label input:checked + span,.shift-1 .shift-plan label input:focus + span {
+    background: #ffa500;
+}
+.shift-2 .shift-plan label input:checked + span,.shift-2 .shift-plan label input:focus + span {
+    background: #ff9079;
+}
+.shift-3 .shift-plan label input:checked + span,.shift-3 .shift-plan label input:focus + span {
+    background: #728199;
+}
+
+/* */
+.scrollable-list {
+    max-height: 80px;
+    overflow: auto;
+}
+.item-list li {
+    background: #fff;
+    padding: 5px;
+    border: 1px solid #bbd2e6;
+    margin: 5px;
+    font-size: 11px;
+    border-radius: 4px;
+}
+
+.icon-list li:before {
+    font-family: "Font Awesome 5 Free";
+    font-weight: 900;
+    margin: 0 10px 0 0;
+    color: #1e6bac;
+}
+.icon-list.employee li::before {
+    content: "\f007";
+}
+.icon-list.departments li::before {
+     content: "\f52a";
+ }

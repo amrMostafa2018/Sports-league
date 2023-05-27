@@ -1,0 +1,16 @@
+.definition {
+    padding-right: 5px;
+}
+
+p.data.left {
+    margin: 1px 10px 0px 0px;
+}
+
+.upload-icon-btn {
+    float: left;
+    text-align: left;
+}
+
+.owl-item {
+    float: right;
+}

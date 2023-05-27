@@ -1,0 +1,23 @@
+{
+    "env": {
+    "name": "DEV",
+    "securityLogin" : false,
+    "offlineMode":true,
+    "module":"EMG"
+     },
+
+    "apiServer": {
+    "url":  "https://localhost:7274/api/" ,             
+    "CommonApiUrl": "https://localhost:44366/api/",
+    "loginUrl": "http://192.168.1.235:8080/hmis-menu/faces/management/login.xhtml" ,
+    "CentralIndexURL":"http://192.168.1.235:8080/HMIS/",
+    "baseHref": "/",
+    "HmisSrvURL":"http://192.168.1.235:8080/SearchRest/"
+    },
+    "OpenCase" :{
+        "PatientType" : "O",
+        "DoctorNumber" : "103020",
+        "ClinicCode" : "01"
+    }
+     
+}
