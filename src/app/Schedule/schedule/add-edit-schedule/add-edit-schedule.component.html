@@ -1,0 +1,69 @@
+<div class="page-title">
+    <form  [formGroup]="formAddEditSchedule" autocomplete="off">
+        <fieldset class="scheduler-border">
+            <legend class="scheduler-border"><i class="fas fa-user-injured"></i> Team Schedule</legend>
+            <div class="row">
+                <input type="hidden"  formControlName="id">
+                <div class=" col-lg-4 col-md-3 col-sm-6 mb-3">
+                    <label>Home Team<span class="req"> *</span></label>
+
+                    <select class="form-select" #homeTeam formControlName="homeTeamId" id="homeTeamId" 
+                              (change)="changeTeam(homeTeam.value , awayTeam.value)"
+                        
+                    [ngClass]="!formAddEditSchedule.controls['homeTeamId'].valid
+                    && formAddEditSchedule.controls['homeTeamId'].touched ? 'field-error' : 'field-noerror'">
+                        <option *ngFor="let item of HomeTeams ;" [value]="item.id"  > {{item.name}}</option>
+                    </select>
+
+                <span
+                    *ngIf="!formAddEditSchedule.controls['homeTeamId'].valid 
+                    && formAddEditSchedule.controls['homeTeamId'].touched"
+                    class="validation">Please Enter Home Team</span>
+                </div>
+
+                <div class=" col-lg-4 col-md-3 col-sm-6 mb-3">
+                    <label>Away Team <span class="req"> *</span></label>
+
+                    <select class="form-select"  #awayTeam formControlName="awayTeamId" id="awayTeamId"
+                    (change)="changeTeam(homeTeam.value,awayTeam.value)" 
+                    [ngClass]="!formAddEditSchedule.controls['awayTeamId'].valid
+                    && formAddEditSchedule.controls['awayTeamId'].touched ? 'field-error' : 'field-noerror'">
+                        <option *ngFor="let item of AwayTeams ;" [value]="item.id"  > {{item.name}}</option>
+                    </select>
+
+          
+                    <span
+                    *ngIf="!formAddEditSchedule.controls['awayTeamId'].valid 
+                    && formAddEditSchedule.controls['awayTeamId'].touched"
+                    class="validation">Please Enter Away Team</span>
+
+                </div>
+                <div class=" col-lg-4 col-md-3 col-sm-6 mb-3">
+                    <label>Schedule Date<span class="req"> *</span></label>
+                    <mat-form-field    appearance="fill" class="form-control date-pick"> 
+                       <input matInput    [(ngModel)]="ScheduleDate " [ngxMatDatetimePicker]="picker" placeholder=""
+                       formControlName="scheduleDate" >
+                             <mat-datepicker-toggle matSuffix [for]="picker">
+                                 <mat-icon matDatepickerToggleIcon>
+                                 </mat-icon>
+                             </mat-datepicker-toggle>
+                              <ngx-mat-datetime-picker  #picker [showSpinners]="true" [showSeconds]="false"
+                                         [stepHour]="1" [stepMinute]="1" [stepSecond]="1"
+                                         [touchUi]="true" [enableMeridian]="true"
+                                         [disableMinute]="false" [hideTime]="false">
+                             </ngx-mat-datetime-picker>
+                      </mat-form-field>
+                </div>
+             
+         
+
+            </div>
+        </fieldset>
+
+        <div class="">
+            <button type="button" class="btn btn-primary right" (click)="SaveData()" [disabled]="!formAddEditSchedule.valid" >{{'teams.Save'| translate}}</button>
+        </div>
+
+    </form>
+</div>
+

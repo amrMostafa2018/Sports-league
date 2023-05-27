@@ -1,0 +1,63 @@
+
+<fieldset class="scheduler-border">
+    <legend class="scheduler-border"><i class="fas fa-user-injured"></i> Team Schedule</legend>
+        <div class="real-content">
+       <div class="row">
+        <div class="col-md-12">
+            <div class="table-responsive">
+                <table mat-table   [dataSource]="dataSource" matSort class="mat-elevation-z8">
+              
+                  <ng-container matColumnDef="Id">
+                    <tr>
+                      <th mat-header-cell *matHeaderCellDef>
+                        <div mat-header></div>
+                      </th>
+                      <td mat-cell *matCellDef="let element">
+                      </td>
+                    </tr>
+                  </ng-container>
+
+                  <ng-container matColumnDef="HomeTeam">
+                        <tr>
+                          <th mat-header-cell *matHeaderCellDef mat-sort-header>
+                            <div class="table-sort">Home Team</div>
+                          </th>
+                          <td mat-cell *matCellDef="let element" [ngStyle]="{'color': (teamId ==element.homeTeamId) ? 'red' : 'black'}">{{element.homeTeam}}</td>
+                        </tr>
+                    </ng-container>
+
+                    <ng-container matColumnDef="AwayTeam">
+                        <tr>
+                          <th mat-header-cell *matHeaderCellDef mat-sort-header>
+                            <div class="table-sort">AwayTeam</div>
+                          </th>
+                          <td mat-cell *matCellDef="let element" [ngStyle]="{'color': (teamId ==element.awayTeamId) ? 'red' : 'black'}">{{element.awayTeam}}</td>
+                        </tr>
+                    </ng-container>
+                  <ng-container matColumnDef="ScheduleDate">
+                      <tr>
+                        <th mat-header-cell *matHeaderCellDef mat-sort-header>
+                          <div class="table-sort">ScheduleDate</div>
+                          <div class="clear"></div>  
+                        </th>
+                        <td mat-cell *matCellDef="let element">
+                         {{element.scheduleDate | date: 'dd/MM/yyyy hh:mm a'}}
+                      </td>
+                      </tr>
+                  </ng-container>
+
+                      <tr mat-header-row *matHeaderRowDef="displayedColumns"></tr>
+                      <tr mat-row *matRowDef="let row; columns: displayedColumns;"></tr>
+                </table>
+               
+            </div>
+
+            <mat-paginator [pageSizeOptions]="[10, 50, 100]"
+            showFirstLastButtons 
+            aria-label="Select page of periodic elements">
+            </mat-paginator>
+      
+        </div>
+    </div>
+        </div>
+</fieldset>

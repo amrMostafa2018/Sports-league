@@ -1,0 +1,22 @@
+{
+    "env": {
+    "name": "prod",
+    "securityLogin" : true 
+   
+    },    
+    "apiServer": {
+        "url": "http://192.168.1.235/CMIS/Emergency-API/api/",      
+        "CommonApiUrl": "http://192.168.1.235/CMIS/Common_API/api/",
+        "loginUrl": "http://192.168.1.235:8080/hmis-menu/faces/management/login.xhtml",
+        "CentralIndexURL":"http://192.168.1.235:8080/HMIS/",
+        "baseHref": "/cmis/emergency/",
+        "HmisSrvURL":"http://192.168.1.235:8080/SearchRest/",
+        "signalRUrl":"http://localhost:5288/signalR"
+
+    },
+    "OpenCase" :{
+        "PatientType" : "O",
+        "DoctorNumber" : "103020",
+        "ClinicCode" : "01"
+    }
+}

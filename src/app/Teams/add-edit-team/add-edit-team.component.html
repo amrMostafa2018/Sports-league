@@ -1,0 +1,55 @@
+<div class="page-title">
+    <form  [formGroup]="formAddEditTeam" autocomplete="off">
+        <fieldset class="scheduler-border">
+            <legend class="scheduler-border"><i class="fas fa-user-injured"></i> Team Info</legend>
+            <div class="row">
+                <input type="hidden"  formControlName="id">
+                <div class=" col-lg-4 col-md-3 col-sm-6 mb-3">
+                    <label>{{'teams.name'| translate}}<span class="req"> *</span></label>
+                    <input type="text"
+                    formControlName="name"
+                    [ngClass]="!formAddEditTeam.controls['name'].valid
+                    && formAddEditTeam.controls['name'].touched ? 'field-error' : 'field-noerror'"
+                    class="form-control" >
+                <span
+                    *ngIf="!formAddEditTeam.controls['name'].valid 
+                    && formAddEditTeam.controls['name'].touched"
+                    class="validation">{{'teams.EmptyNameFeild'| translate}}</span>
+                </div>
+
+                <div class=" col-lg-4 col-md-3 col-sm-6 mb-3">
+                    <label>{{'teams.city'| translate}}<span class="req"> *</span></label>
+                    <input type="text"
+                    formControlName="city"
+                    [ngClass]="!formAddEditTeam.controls['city'].valid
+                    && formAddEditTeam.controls['city'].touched ? 'field-error' : 'field-noerror'"
+                    class="form-control" >
+          
+                    <span
+                    *ngIf="!formAddEditTeam.controls['city'].valid 
+                    && formAddEditTeam.controls['city'].touched"
+                    class="validation">{{'teams.EmptyCityFeild'| translate}}</span>
+
+                </div>
+                <div class=" col-lg-4 col-md-3 col-sm-6 mb-3">
+                    <label>{{'teams.coach'| translate}}<span class="req"> *</span></label>
+                    <input type="text"
+                    formControlName="coach"
+                    [ngClass]="!formAddEditTeam.controls['coach'].valid
+                    && formAddEditTeam.controls['coach'].touched ? 'field-error' : 'field-noerror'"
+                    class="form-control" >
+
+                    <span
+                    *ngIf="!formAddEditTeam.controls['coach'].valid 
+                    && formAddEditTeam.controls['coach'].touched"
+                    class="validation">{{'teams.EmptyCoachFeild'| translate}}</span>
+                </div>
+
+            </div>
+        </fieldset>
+
+        <div class="">
+            <button type="button" class="btn btn-primary right" (click)="SaveData()" [disabled]="!formAddEditTeam.valid" >{{'teams.Save'| translate}}</button>
+        </div>
+    </form>
+</div>

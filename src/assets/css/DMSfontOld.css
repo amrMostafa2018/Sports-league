@@ -1,0 +1,230 @@
+@font-face {
+  font-family: 'DMS';
+  src:  url('../fonts/DMS.eot?v1.6.3');
+  src:  url('../fonts/DMS.eot?v1.6.3#iefix') format('embedded-opentype'),
+  url('../fonts/DMS.ttf?v1.6.3') format('truetype'),
+  url('../fonts/DMS.woff?v1.6.3') format('woff'),
+  url('../fonts/DMS.svg?v1.6.3#DMS') format('svg');
+  font-weight: normal;
+  font-style: normal;
+}
+
+[class^="icon-"], [class*=" icon-"] {
+  /* use !important to prevent issues with browser extensions that change fonts */
+  font-family: 'DMS' !important;
+  speak: none;
+  font-style: normal;
+  font-weight: normal;
+  font-variant: normal;
+  text-transform: none;
+  line-height: 1;
+
+  /* Better Font Rendering =========== */
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+.icon-vertical-bed-discharge:before {
+  content: "\e901";
+}
+.icon-discharge-bed:before {
+  content: "\e903";
+}
+.icon-discharge-bed-2:before {
+  content: "\e900";
+}
+.icon-full-bed-2:before {
+  content: "\e902";
+}
+.icon-half-empty-bed:before {
+  content: "\e904";
+}
+.icon-empty-bed:before {
+  content: "\e905";
+}
+.icon-full-bed:before {
+  content: "\e906";
+}
+.icon-hospital-bed-50:before {
+  content: "\e93b";
+}
+.icon-fail-risk:before {
+  content: "\e939";
+}
+.icon-ops:before {
+  content: "\e93a";
+}
+.icon-emr-setup-icon:before {
+  content: "\e830";
+}
+.icon-embryo:before {
+  content: "\e907";
+}
+.icon-cough:before {
+  content: "\e908";
+}
+.icon-add-button-inside-black-circle:before {
+  content: "\e909";
+}
+.icon-calendar-and-clock:before {
+  content: "\e90a";
+}
+.icon-check:before {
+  content: "\e90b";
+}
+.icon-clerk:before {
+  content: "\e90c";
+}
+.icon-Collective-CC:before {
+  content: "\e90d";
+}
+.icon-Count-Safe:before {
+  content: "\e90e";
+}
+.icon-Deposit:before {
+  content: "\e90f";
+}
+.icon-Disbursement:before {
+  content: "\e910";
+}
+.icon-speeding-arrow:before {
+  content: "\e911";
+}
+.icon-double-directional-arrow:before {
+  content: "\e912";
+}
+.icon-Disbursement-alt:before {
+  content: "\e913";
+}
+.icon-down-arrow:before {
+  content: "\e914";
+}
+.icon-exchange:before {
+  content: "\e915";
+}
+.icon-hand-shake:before {
+  content: "\e916";
+}
+.icon-invoice:before {
+  content: "\e917";
+}
+.icon-saving-into-safe-box:before {
+  content: "\e918";
+}
+.icon-transfer:before {
+  content: "\e919";
+}
+.icon-withdraw-of-a-safe-box:before {
+  content: "\e91a";
+}
+.icon-bank-building:before {
+  content: "\e91b";
+}
+.icon-calendar:before {
+  content: "\e91c";
+}
+.icon-call-answer:before {
+  content: "\e91d";
+}
+.icon-clock:before {
+  content: "\e91e";
+}
+.icon-danger:before {
+  content: "\e91f";
+}
+.icon-door:before {
+  content: "\e920";
+}
+.icon-female-silhouette:before {
+  content: "\e921";
+}
+.icon-hand:before {
+  content: "\e922";
+}
+.icon-Transfer-to-Bank:before {
+  content: "\e923";
+}
+.icon-hands:before {
+  content: "\e924";
+}
+.icon-invoice1:before {
+  content: "\e925";
+}
+.icon-man:before {
+  content: "\e926";
+}
+.icon-mask:before {
+  content: "\e927";
+}
+.icon-medical:before {
+  content: "\e928";
+}
+.icon-teacher:before {
+  content: "\e929";
+}
+.icon-tool:before {
+  content: "\e92a";
+}
+.icon-event:before {
+  content: "\e92b";
+}
+.icon-bar-chart:before {
+  content: "\e92c";
+}
+.icon-bell:before {
+  content: "\e92d";
+}
+.icon-calendar-with-a-clock-time-tools:before {
+  content: "\e92e";
+}
+.icon-coin-stack:before {
+  content: "\e92f";
+}
+.icon-nurse:before {
+  content: "\e930";
+}
+.icon-pharmacy-shopping-cart:before {
+  content: "\e931";
+}
+.icon-teacher1:before {
+  content: "\e932";
+}
+.icon-open-book:before {
+  content: "\e933";
+}
+.icon-date-time:before {
+  content: "\e934";
+}
+.icon-home-care:before {
+  content: "\e935";
+}
+.icon-nurse-patient:before {
+  content: "\e936";
+}
+.icon-bed-empty:before {
+  content: "\e937";
+}
+.icon-bed-full:before {
+  content: "\e938";
+}
+.icon-alarm-clock:before {
+  content: "\e93c";
+}
+.icon-vertical-bed-reserved:before {
+  content: "\e93d";
+}
+.icon-vertical-bed-full:before {
+  content: "\e93e";
+}
+.icon-vertical-bed-empty:before {
+  content: "\e93f";
+}
+.icon-vertical-bed-half-empty:before {
+  content: "\e940";
+}
+.icon-vertical-bed-half-full:before {
+  content: "\e941";
+}
+.icon-patient-isolation:before {
+  content: "\e942";
+}

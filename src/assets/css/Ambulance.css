@@ -1,0 +1,178 @@
+nav.header .container-fluid {
+    padding-left: 15px;
+}
+.right-content {
+    padding-left: 0px;
+}
+/* Examination Patient Order Status */
+.requestStatus {
+    font-weight: bold;
+}
+.requestStatus.warning {
+    color: #FF9800;
+}
+.requestStatus.danger {
+    color: #e91e63 !important;
+}
+.requestStatus.success {
+    color: #10961a;
+}
+.requestStatus.semiSuccess {
+    color: #82a956 !important;
+}
+.requestStatus.info {
+    color: #00bcd4;
+}
+
+/******************* Request Timeline *******************/
+.timeline-step {
+    position: relative;
+    padding: 10px  0px 20px 0 !important;
+}
+.timeline-step:after {
+    content: "";
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    display: block;
+    background: gray;
+    margin: 0 auto;
+    z-index: 1;
+    position: relative;
+}
+.timeline-step.complete:after{
+    background:  #10961a;
+}
+.timeline-step:before{
+    content: "";
+    width: 100%;
+    height: 5px;
+    display: block;
+    background: gray;
+    position: relative;
+    top: 12px;
+}
+.timeline-step.complete:before{
+    background:  #10961a;
+}
+.timeline-step.start:before {
+    margin: 0 0 0 50%;
+}
+.timeline-step.start:after {
+
+}
+.timeline-step.end:before {
+    width: 50%;
+}
+.timeline-step.end:after {
+
+}
+.timeline-step.active{
+    text-align: center;
+}
+.timeline-step.active i{
+    position: absolute;
+    margin: -10px -15px;
+    color: red;
+    font-size: 25px;
+    text-shadow: 5px 5px 5px #ffffff;
+}
+.timeline-step.active img{
+    position: absolute;
+    margin: -20px -20px;
+    height: 40px;
+    right: 20px;
+    /*transform: translate(20px, 0px);*/
+    transition: all 0.4s;
+    -webkit-transition: all 0.4s;
+    -moz-transition: all 0.4s;
+    -o-transition: all 0.4s;
+    -ms-transition: all 0.4s;
+}
+
+.timeline-step .time,.timeline-step .title{
+    position: absolute;
+    bottom: 5px;
+    text-align: center;
+    width: 100%;
+    left: 0;
+    font-size: 10px;
+}
+
+.timeline-step .title{
+    top: 0;
+    font-size: 12px;
+    font-weight: 900;
+    display: none;
+}
+
+.ambulance.timeline {
+    margin: 0 0 15px 0;
+}
+
+div.timeline-step {
+    width: 16.6%;
+    float: left;
+}
+div.timeline-step .title{
+    display: inline;
+}
+
+div.timeline-step.end{
+    width: 8.3%;
+}
+div.timeline-step.end:before {
+    width: 100%;
+}
+div.timeline-step.end:after {
+    left: 50%;
+}
+div.timeline-step.end .time, div.timeline-step.end .title{
+    left: 50%;
+}
+
+
+div.timeline-step.start{
+    width: 8.3%;
+    margin: 0 0 0 8.3%;
+}
+
+div.timeline-step.start:before {
+    width: 100%;
+    margin: 0;
+}
+
+div.timeline-step.start:after {
+    right: 50%;
+}
+
+div.timeline-step.start .time, div.timeline-step.start .title{
+    left: -50%;
+}
+
+div.timeline-step:not(.complete):hover{
+    cursor: pointer;
+}
+
+div.timeline-step:not(.complete):hover:after{
+    content: "\f00c";
+    font-weight: 900;
+    font-family: "Font Awesome 5 Free";
+    font-style: normal;
+    font-variant: normal;
+    text-rendering: auto;
+    -moz-osx-font-smoothing: grayscale;
+    -webkit-font-smoothing: antialiased;
+
+    background:  #10961a;
+    color: #fff;
+    line-height: 20px;
+    padding: 0 4px;
+    cursor: pointer;
+}
+div.timeline-step:not(.complete):hover:before{
+    background:  #10961a;
+    cursor: pointer;
+
+
+}
