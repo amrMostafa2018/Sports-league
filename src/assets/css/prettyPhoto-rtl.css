@@ -1,7 +1,0 @@
-div.pp_default .pp_content_container .pp_right {padding-right: 19px;}
-.pp_content_container {text-align: right;}
-
-
-.pp_nav {float: right;}
-.pp_nav .pp_play, .pp_nav .pp_pause {float: left;margin-right: 4px;}
-a.pp_close {left: 0;right: auto;}
